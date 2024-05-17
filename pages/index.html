@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<base target="_blank" />
+		<title>2024 Hexo Blog</title>
+	</head>
+	<body>
+		<div id="app">
+			<%- include('./layout/header'); -%>
+
+			<section id="hero" class="border-top border-primary-200 position-relative">
+				<div class="container-fluid">
+					<div class="row g-0">
+						<div class="col flex-1 order-2 order-lg-1 px-3 py-9 py-lg-6 text-center text-lg-start">
+							<div class="d-flex flex-column justify-content-center">
+								<div>
+									<h2 class="fw-bolder fs-2 fs-lg-1 text-primary-700 mb-6">Hi！我是 Noel</h2>
+									<p class="mb-4">
+										具有 0 年經驗的<span class="text-mark">不資深 UI 設計師</span>兼<span class="text-mark"
+											>前端工程師</span
+										><br />技術雙修並行，熱衷於優化使用者的網頁體驗
+									</p>
+									<p class="text-primary-400 mb-6 mb-lg-11 text-align-cneter text-align-lg-start">
+										WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN
+									</p>
+									<ul class="mb-lg-0 list-unstyled d-flex justify-content-center justify-content-lg-start">
+										<li class="me-4"><a class="d-block fs-0 social-icon social-icon-ig" href="javascript:;">IG</a></li>
+										<li class="me-4"><a class="d-block fs-0 social-icon social-icon-fb" href="javascript:;">FB</a></li>
+										<li><a class="d-block fs-0 social-icon social-icon-yt" href="javascript:;">Youtube</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-8 order-1 order-lg-2">
+							<img src="../assets/images/hero-lg.png" class="img-fluid d-none d-lg-block w-100 h-auto" alt="" />
+							<img src="../assets/images/hero-sm.png" class="img-fluid d-block d-lg-none w-100" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="work"></section>
+
+			<section id="services"></section>
+
+			<section id="articles"></section>
+			<%- include('./layout/footer'); -%>
+		</div>
+
+		<script type="module" src="../main.js"></script>
+	</body>
+</html>
