@@ -47,7 +47,9 @@ $utilities: map-merge(
 				property: opacity,
 				values: (
 					0: 0,
+					10: 0.1,
 					25: 0.25,
+					40: 0.4,
 					50: 0.5,
 					75: 0.75,
 					100: 1,
@@ -244,6 +246,7 @@ $utilities: map-merge(
 			property: height,
 			class: h,
 			values: (
+				1: 1px,
 				25: 25%,
 				50: 50%,
 				75: 75%,
@@ -813,6 +816,7 @@ $utilities: map-merge(
 					3: var(--#{$prefix}border-radius-lg),
 					4: var(--#{$prefix}border-radius-xl),
 					5: var(--#{$prefix}border-radius-xxl),
+					24: 1.5rem,
 					circle: 50%,
 					pill: var(--#{$prefix}border-radius-pill),
 				),
