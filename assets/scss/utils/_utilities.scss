@@ -222,6 +222,7 @@ $utilities: map-merge(
 				),
 			),
 		"max-width": (
+			responsive: true,
 			property: max-width,
 			class: mw,
 			values: (
@@ -658,6 +659,7 @@ $utilities: map-merge(
 		// scss-docs-start utils-color
 		"color":
 			(
+				responsive: true,
 				property: color,
 				class: text,
 				local-vars: (
@@ -752,6 +754,7 @@ $utilities: map-merge(
 		"background-color":
 			(
 				property: background-color,
+				state: hover,
 				class: bg,
 				local-vars: (
 					"bg-opacity": 1,
@@ -816,6 +819,7 @@ $utilities: map-merge(
 					3: var(--#{$prefix}border-radius-lg),
 					4: var(--#{$prefix}border-radius-xl),
 					5: var(--#{$prefix}border-radius-xxl),
+					16: 1rem,
 					24: 1.5rem,
 					circle: 50%,
 					pill: var(--#{$prefix}border-radius-pill),
