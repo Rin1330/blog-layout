@@ -1,38 +1,5 @@
-.with-Icon {
-	&:before {
-		position: absolute;
-		content: "";
-		background-image: url("/assets/images/title-deco-left-lg.png");
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		background-size: contain;
-		width: 100px;
-		height: 6px;
-		left: -116px;
-		top: 50%;
-		transform: translateY(-50%);
-		@include media-breakpoint-down(lg) {
-			width: 56px;
-			left: -72px;
-			background-image: url("/assets/images/title-deco-left-sm.png");
-		}
-	}
-	&:after {
-		position: absolute;
-		content: "";
-		background-image: url("/assets/images/title-deco-right-lg.png");
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		background-size: contain;
-		width: 100px;
-		height: 6px;
-		right: -116px;
-		top: 50%;
-		transform: translateY(-50%);
-		@include media-breakpoint-down(lg) {
-			width: 56px;
-			right: -72px;
-			background-image: url("/assets/images/title-deco-right-sm.png");
-		}
+.navbar-toggler {
+	&:focus {
+		box-shadow: none;
 	}
 }

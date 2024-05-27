@@ -219,6 +219,7 @@ $utilities: map-merge(
 					75: 75%,
 					100: 100%,
 					auto: auto,
+					40p: 40px,
 				),
 			),
 		"max-width": (
@@ -253,6 +254,7 @@ $utilities: map-merge(
 				75: 75%,
 				100: 100%,
 				auto: auto,
+				40p: 40px,
 			),
 		),
 		"max-height": (
@@ -598,6 +600,7 @@ $utilities: map-merge(
 			values: italic normal,
 		),
 		"font-weight": (
+			state: hover,
 			property: font-weight,
 			class: fw,
 			values: (
