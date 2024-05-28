@@ -443,6 +443,7 @@ $spacers: (
 	19: $spacer * 8,
 	// 128px
 	20: $spacer * 9,
+	60px: 60px,
 	// 144px
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -456,6 +457,7 @@ $position-values: (
 	0: 0,
 	50: 50%,
 	100: 100%,
+	56px: 56px,
 ) !default;
 // scss-docs-end position-map
 
@@ -1753,7 +1755,7 @@ $btn-close-white-filter: invert(1) grayscale(100%) brightness(200%) !default;
 $offcanvas-padding-y: $modal-inner-padding !default;
 $offcanvas-padding-x: $modal-inner-padding !default;
 $offcanvas-horizontal-width: 400px !default;
-$offcanvas-vertical-height: 340px; //30vh !default;
+$offcanvas-vertical-height: 375px; //30vh !default;
 $offcanvas-transition-duration: 0.3s !default;
 $offcanvas-border-color: $modal-content-border-color !default;
 $offcanvas-border-width: $modal-content-border-width !default;

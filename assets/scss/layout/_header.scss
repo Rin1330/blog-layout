@@ -25,6 +25,7 @@
       transition: all .25s ease 0s;
     }
     &:is(:hover, .active) {
+      font-weight: bold!important;
       &:before {
         border-top: 1px solid #919191;
         border-left: 1px solid #919191;
