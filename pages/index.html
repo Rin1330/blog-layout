@@ -11,14 +11,17 @@
 		<div id="app">
 			<%- include('./layout/header'); -%>
 
-			<section id="main-banner" class="main-banner">
+			<section id="main-banner" class="main-banner position-relative">
+				<div class="main-banner-img position-absolute"><img src="/assets/images/hero-lg.png" alt=""></div>
 				<div class="container">
-					<div class="row">
-						<div class="col"></div>
+					<div class="row flex-row-reverse">
+						<div class="col">
+							<img src="/assets/images/hero-sm.png" class="img-fluid d-block d-lg-none" alt="">
+						</div>
 						<div class="col-lg-5">
-							<div class="text-center text-lg-left">
-								<p class="fw-bold fs-2 fs-lg-1 text-primary-700 text-mb-6">Hi！我是 Noel</p>
-								<p class="mb-4 fs-5 text-primary-600">具有 10 年經驗的<span>資深 UI 設計師</span>兼<span>前端工程師</span>技術雙修並行，熱衷於優化使用者的網頁體驗</p>
+							<div class="text-center text-lg-start">
+								<p class="fw-bold fs-2 fs-lg-1 text-primary-700 text-mb-6 lh-xs">Hi！我是 Noel</p>
+								<p class="mb-4 fs-5 text-primary-600">具有 10 年經驗的<span>資深 UI 設計師</span>兼<span>前端工程師</span><br>技術雙修並行，熱衷於優化使用者的網頁體驗</p>
 								<p class="text-primary-400 mb-6 mb-lg-60px">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
 							</div>
 						</div>
