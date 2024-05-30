@@ -11,18 +11,45 @@
 		<div id="app">
 			<%- include('./layout/header'); -%>
 
-			<section id="main-banner" class="main-banner position-relative">
-				<div class="main-banner-img position-absolute"><img src="/assets/images/hero-lg.png" alt=""></div>
-				<div class="container">
-					<div class="row flex-row-reverse">
-						<div class="col">
-							<img src="/assets/images/hero-sm.png" class="img-fluid d-block d-lg-none" alt="">
-						</div>
+			<section id="main-banner" class="main-banner position-relative d-flex align-items-center flex-column flex-lg-row">
+				<picture class="picture position-relative position-lg-absolute top-auto top-lg-0 end-auto end-lg-0">
+					<source media="(max-width: 992px)" srcset="/assets/images/hero-sm.png" />
+					<img src="/assets/images/hero-lg.png" class="img-fluid w-100" alt="" />
+				</picture>
+				<div class="container w-100">
+					<div class="row py-9 py-lg-0">
 						<div class="col-lg-5">
 							<div class="text-center text-lg-start">
-								<p class="fw-bold fs-2 fs-lg-1 text-primary-700 text-mb-6 lh-xs">Hi！我是 Noel</p>
-								<p class="mb-4 fs-5 text-primary-600">具有 10 年經驗的<span>資深 UI 設計師</span>兼<span>前端工程師</span><br>技術雙修並行，熱衷於優化使用者的網頁體驗</p>
+								<p class="fw-bold fs-2 fs-lg-1 text-primary-700 text-mb-6 lh-xs mb-6">Hi！我是 Noel</p>
+								<p class="mb-4 fs-5 text-primary-600">
+									具有 10 年經驗的<span class="d-inline-block"
+										><span class="d-inline-block mx-2 label-mark">資深 UI 設計師</span>兼<span
+											class="d-inline-block mx-2 label-mark"
+											>前端工程師</span
+										></span
+									><br />技術雙修並行，熱衷於優化使用者的網頁體驗
+								</p>
 								<p class="text-primary-400 mb-6 mb-lg-60px">WEB DEVELOPMENT / BRANDING / UI / UX / APP DESIGN</p>
+								<ul class="list-unstyled d-flex justify-content-center justify-content-lg-start mb-0">
+									<li class="me-4">
+										<a
+											class="d-inline-flex justify-content-center align-items-center lh-0 w-9 w-lg-11 h-9 h-lg-11 social-icon social-icon-ig"
+											href="javsacript:;"
+										></a>
+									</li>
+									<li class="me-4">
+										<a
+											class="d-inline-flex justify-content-center align-items-center lh-0 w-9 w-lg-11 h-9 h-lg-11 social-icon social-icon-facebook"
+											href="javsacript:;"
+										></a>
+									</li>
+									<li>
+										<a
+											class="d-inline-flex justify-content-center align-items-center lh-0 w-9 w-lg-11 h-9 h-lg-11 social-icon social-icon-youtube"
+											href="javsacript:;"
+										></a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -30,14 +57,14 @@
 			</section>
 
 			<section id="work" class="pt-9 pt-lg-18 text-center">
-				<h2 class="with-Icon d-inline-block position-relative mb-9 mb-lg-14 fw-bold text-primary-700 fs-4 fs-lg-2">
+				<h2 class="text-wing d-inline-block position-relative mb-9 mb-lg-14 fw-bold text-primary-700 fs-4 fs-lg-2">
 					作品介紹
 				</h2>
 			</section>
 
 			<section id="services" class="py-14 py-lg-18 text-center">
 				<div class="container">
-					<h2 class="with-Icon d-inline-block position-relative mb-9 mb-lg-14 fw-bold text-primary-700 fs-4 fs-lg-2">
+					<h2 class="text-wing d-inline-block position-relative mb-9 mb-lg-14 fw-bold text-primary-700 fs-4 fs-lg-2">
 						服務項目
 					</h2>
 					<div class="row"></div>
@@ -45,7 +72,7 @@
 			</section>
 
 			<section id="articles" class="py-14 py-lg-18 text-center">
-				<h2 class="with-Icon d-inline-block position-relative mb-9 mb-lg-14 fw-bold text-primary-700 fs-4 fs-lg-2">
+				<h2 class="text-wing d-inline-block position-relative mb-9 mb-lg-14 fw-bold text-primary-700 fs-4 fs-lg-2">
 					精選文章
 				</h2>
 			</section>

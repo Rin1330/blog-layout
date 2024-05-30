@@ -18,3 +18,38 @@
 		}
 	}
 }
+
+.text-wing {
+	padding: 0 116px;
+	transition: all 0.25s ease 0s;
+	@include media-breakpoint-down(lg) {
+		padding: 0 72px;
+	}
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100px;
+		height: 6px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-image: url("/assets/images/title-deco-left-lg.png");
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		@include media-breakpoint-down(lg) {
+			width: 56px;
+			background-image: url("/assets/images/title-deco-left-sm.png");
+		}
+	}
+	&:after {
+		background-image: url("/assets/images/title-deco-right-lg.png");
+		left: inherit;
+		right: 0;
+		@include media-breakpoint-down(lg) {
+			background-image: url("/assets/images/title-deco-right-sm.png");
+		}
+	}
+}
