@@ -41,5 +41,36 @@
 	background-image: url("/assets/images/mark.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: left bottom;
+	background-position: center center;
+}
+
+#work {
+	.container {
+		@include media-breakpoint-down(lg) {
+			max-width: 100%;
+		}
+		.opacity-layer:before {
+			content: "";
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba($color: #000000, $alpha: 0.4);
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.half-opacity:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: #0a101380;
+		z-index: 2;
+	}
 }
