@@ -41,36 +41,114 @@
 	background-image: url("/assets/images/mark.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: center center;
+	background-position: left bottom;
 }
 
-#work {
-	.container {
+.work-list {
+	&-item {
+		.container {
+			@include media-breakpoint-down(lg) {
+				max-width: 100%;
+				padding: 0;
+			}
+		}
+		.row {
+			@include media-breakpoint-down(lg) {
+				margin: 0;
+			}
+		}
+		&:nth-child(1) {
+			background: no-repeat url('../assets/images/homepage-work1-bg.png')  50% 50% / cover;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: #272727;
+				opacity: .4;
+				@include media-breakpoint-down(lg) {
+					content: none;
+				}
+			}
+			.col-img {
+				@include media-breakpoint-down(lg) {
+					position: relative;
+					background: no-repeat url('../assets/images/homepage-work1-bg.png')  50% 50% / cover;
+					&:before {
+						content: '';
+						position: absolute;
+						display: block;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						background-color: #272727;
+						opacity: .4;
+					}
+				}
+			}
+		} 
+		&:nth-child(2) {
+			.col-img {
+				@include media-breakpoint-down(lg) {
+					aspect-ratio: 375 / 390;
+					background: no-repeat url('../assets/images/homepage-work2.png')  50% 50% / cover;
+				}
+			}
+			background: no-repeat url('../assets/images/homepage-work2-bg.png')  50% 50% / cover;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				width: 50%;
+				height: 100%;
+				background-color: #0A101380;
+				@include media-breakpoint-down(lg) {
+					content: none;
+				}
+			}
+		} 
+		&:nth-child(3) {
+			.col-img {
+				@include media-breakpoint-down(lg) {
+					aspect-ratio: 375 / 390;
+					background: no-repeat url('../assets/images/homepage-work3-bg.png')  50% 50% / cover;
+					&:before {
+						content: '';
+						position: absolute;
+						display: block;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background-color: #0D0C0780;
+					}
+				}
+			}
+			background: no-repeat url('../assets/images/homepage-work3-bg.png')  50% 50% / cover;
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #0D0C0780;
+			}
+			@include media-breakpoint-down(lg) {
+				&:before {
+					content: none;
+				}
+			}
+		} 
 		@include media-breakpoint-down(lg) {
-			max-width: 100%;
+			background: none!important;
 		}
-		.opacity-layer:before {
-			content: "";
-			position: absolute;
-			display: block;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba($color: #000000, $alpha: 0.4);
-			width: 100%;
-			height: 100%;
-		}
-	}
-	.half-opacity:before {
-		content: "";
-		position: absolute;
-		display: block;
-		width: 50%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background-color: #0a101380;
-		z-index: 2;
 	}
 }
