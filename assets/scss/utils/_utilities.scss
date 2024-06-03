@@ -700,6 +700,7 @@ $utilities: map-merge(
 			),
 		),
 		"line-height": (
+			responsive: true,
 			property: line-height,
 			class: lh,
 			values: (

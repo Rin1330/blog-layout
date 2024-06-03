@@ -116,7 +116,7 @@
 		&:nth-child(3) {
 			.col-img {
 				@include media-breakpoint-down(lg) {
-					aspect-ratio: 375 / 390;
+					// aspect-ratio: 375 / 390;
 					background: no-repeat url('../assets/images/homepage-work3-bg.png')  50% 50% / cover;
 					&:before {
 						content: '';
