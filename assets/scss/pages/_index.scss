@@ -152,3 +152,17 @@
 		}
 	}
 }
+
+.articles {
+	img,p {
+		transition: all .25s ease 0s;
+	}
+	a:hover {
+		img {
+			transform: scale(1.15);
+		}
+		p {
+			text-decoration: underline;
+		}
+	}
+}
