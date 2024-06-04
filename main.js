@@ -11,17 +11,19 @@ navbarBtn.addEventListener('click', e => {
 })
 
 const swiper = new Swiper('#articles .swiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 24,
-  768: {
-    slidesPerView: 1,
-    spaceBetween: 24
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
   },
-  // when window width is >= 640px
-  // 992: {
-  //   slidesPerView: 3,
-  //   spaceBetween: 24,
-  // },
   pagination: {
     el: "#articles .swiper-pagination",
     clickable: true,
