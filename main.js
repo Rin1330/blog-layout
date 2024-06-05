@@ -28,7 +28,7 @@ const swiper = new Swiper('#articles .swiper', {
     el: "#articles .swiper-pagination",
     clickable: true,
     renderBullet: function(index, className){
-      return `<a href="javascript:;" class="${className} fs-0 w-3 h-3 mx-2 bg-black">${index + 1}</a>`;
+      return `<a href="javascript:;" class="${className} fs-0 w-3 h-3 mx-2 my-2 bg-black">${index + 1}</a>`;
     }
   }
 });
