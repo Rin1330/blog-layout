@@ -1,8 +1,21 @@
 import "./assets/scss/all.scss";
 import * as bootstrap from "bootstrap";
 import Swiper from 'swiper/bundle';
+import { gsap } from "gsap";
 
 import 'swiper/css/bundle';
+
+
+const header = document.querySelector('#header');
+const list = ['position-sticky', 'top-0', 'start-0', 'z-5'];
+// const option = { threshold: [0.35]};
+
+// const handler = entries => {
+//   !entries[0].isIntersection ?  header.classList.add(...list) : header.classList.remove(...list)
+// }
+// const observer = new window.IntersectionObserver(handler, option)
+// observer.observe(header);
+
 
 const navbarBtn = document.querySelector('.navbar-toggler');
 navbarBtn.addEventListener('click', e => {

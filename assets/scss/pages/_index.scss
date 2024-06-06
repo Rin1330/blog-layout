@@ -45,6 +45,14 @@
 }
 
 .work-list {
+	a:is(:hover,:focus) {
+		.material-symbols-outlined {
+			color: black!important;
+		}
+	}
+	.material-symbols-outlined {
+		transition: color .5s ease-in-out 0s;
+	}
 	&-item {
 		.container {
 			@include media-breakpoint-down(lg) {
