@@ -66,7 +66,7 @@
 			}
 		}
 		&:nth-child(1) {
-			background: no-repeat url('../assets/images/homepage-work1-bg.png')  50% 50% / cover;
+			background: no-repeat url('/assets/images/homepage-work1-bg.png')  50% 50% / cover;
 			&:before {
 				content: '';
 				position: absolute;
@@ -84,7 +84,7 @@
 			.col-img {
 				@include media-breakpoint-down(lg) {
 					position: relative;
-					background: no-repeat url('../assets/images/homepage-work1-bg.png')  50% 50% / cover;
+					background: no-repeat url('/assets/images/homepage-work1-bg.png')  50% 50% / cover;
 					&:before {
 						content: '';
 						position: absolute;
@@ -103,10 +103,10 @@
 			.col-img {
 				@include media-breakpoint-down(lg) {
 					aspect-ratio: 375 / 390;
-					background: no-repeat url('../assets/images/homepage-work2.png')  50% 50% / cover;
+					background: no-repeat url('/assets/images/homepage-work2.png')  50% 50% / cover;
 				}
 			}
-			background: no-repeat url('../assets/images/homepage-work2-bg.png')  50% 50% / cover;
+			background: no-repeat url('/assets/images/homepage-work2-bg.png')  50% 50% / cover;
 			&:before {
 				content: '';
 				position: absolute;
@@ -125,7 +125,7 @@
 			.col-img {
 				@include media-breakpoint-down(lg) {
 					// aspect-ratio: 375 / 390;
-					background: no-repeat url('../assets/images/homepage-work3-bg.png')  50% 50% / cover;
+					background: no-repeat url('/assets/images/homepage-work3-bg.png')  50% 50% / cover;
 					&:before {
 						content: '';
 						position: absolute;
@@ -138,7 +138,7 @@
 					}
 				}
 			}
-			background: no-repeat url('../assets/images/homepage-work3-bg.png')  50% 50% / cover;
+			background: no-repeat url('/assets/images/homepage-work3-bg.png')  50% 50% / cover;
 			&:before {
 				content: '';
 				position: absolute;
